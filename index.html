@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Node js Anlık Mesajlaşma Örneği</title>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<style>
+    .girispaneli {
+        background: #090a33;
+        border-radius: 20px;
+        border: 1px solid #6d6e98;
+    }
+</style>
+</head>
+<body>
+<div class="contanier">
+    <div class="row text-center mt-5">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 mx-auto mt-3  girispaneli">
+            <div class="row p-2">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h3 class="text-white">CHAT GİRİŞ</h3>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-1"><form method="POST" action="/chat">
+                    <input id="kuladi" name="kulad" autocomplete="off" class="form-control  p-1 mt-2" placeholder="İSİM GİRİNİZ" />
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-2">
+                    <button class="btn btn-block btn-warning">GİRİŞ YAP</button>
+                </div></form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/jquery/jquery.min.js"></script>
+<script>
+        /* $(function () {
+            $('form').submit(function (e) {
+                e.preventDefault();
+
+                if ($('#kuladi').val().length >= 2) {
+                    window.location.assign("/chat?ad=" + $('#kuladi').val())                 
+                }else{
+                    alert("En az 2 karakter olmalı")
+                }
+            })
+        }) */
+</script>
+</body>
+</html>
